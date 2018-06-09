@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82B1FF">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#82B1FF"
+        android:weightSum="10">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="-5dp"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:layout_marginLeft="45dp"
+
+            android:layout_marginRight="45dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginRight="15dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColorHint="#000000"
+                    android:ems="10"
+                    android:layout_weight="1"
+                    android:hint="phonenumber"
+
+                    android:inputType="phone"
+                    android:id="@+id/editText1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="120dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginRight="15dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:hint="Password"
+                    android:textColorHint="#000000"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/editText2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="200dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginRight="15dp">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_green_light"
+                    android:fontFamily="monospace"
+                    android:hint="submit"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:textColorHint="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="New user Signup"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="100dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
